@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <data>
+        <variable
+            name="presenter"
+            type="com.zj.tronwallet.activity.AccountActivity"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="返回"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:onClick="@{()->presenter.onBackClicked()}"
+            />
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            >
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               >
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/colorPrimary"
+                   android:textSize="14sp"
+                   android:text="地址："
+                   android:layout_marginTop="10dp"
+                   android:padding="10dp"
+                   />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="10dp"
+                   android:textSize="14sp"
+                    android:text=""
+                   android:textIsSelectable="true"
+                   android:id="@+id/tv_wallet_address"
+                   android:textColor="@color/colorPrimary"
+                   />
+
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/colorPrimary"
+                   android:textSize="14sp"
+                   android:text="私钥："
+                   android:layout_marginTop="10dp"
+                   android:padding="10dp"
+
+                   />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="10dp"
+                   android:textSize="14sp"
+                   android:text=""
+                   android:textIsSelectable="true"
+                   android:id="@+id/tv_wallet_private"
+                   android:textColor="@color/colorPrimary"
+                   />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/colorPrimary"
+                   android:textSize="14sp"
+                   android:text="助记词："
+                   android:layout_marginTop="10dp"
+                   android:padding="10dp"
+                   />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="10dp"
+                   android:textSize="14sp"
+                   android:text=""
+                   android:textIsSelectable="true"
+                   android:id="@+id/tv_wallet_mnemonic"
+                   android:textColor="@color/colorPrimary"
+                   />
+           </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+</layout>

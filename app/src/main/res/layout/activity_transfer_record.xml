@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <data>
+        <variable
+            name="presenter"
+            type="com.zj.tronwallet.activity.TransferRecordActivity"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <com.zj.tronwallet.view.TitleBar
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:titleText="转账记录"
+            app:titleColor="@color/colorPrimary"
+            app:titleSize="18sp"
+            app:leftBtnClick="onLeftClicked"
+            app:leftBtnIcon="@drawable/titlebar_back_blue"
+            android:id="@+id/title_bar"
+            ></com.zj.tronwallet.view.TitleBar>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D8D8D8"
+            />
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:tabIndicatorColor="@color/colorAccent"
+            app:tabTextColor="@android:color/black"
+            app:tabSelectedTextColor="@color/colorAccent"
+            android:id="@+id/tab_record"
+            ></android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/record_viewpager"
+            ></android.support.v4.view.ViewPager>
+    </LinearLayout>
+</layout>

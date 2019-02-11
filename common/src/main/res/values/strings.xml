@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">common</string>
+
+    <string name="fullnode_ip" translatable="false">54.236.37.243</string>
+    <string name="fullnode_port" translatable="false">50051</string>
+    <string name="soliditynode_ip" translatable="false">47.91.18.255</string>
+    <string name="soliditynode_port" translatable="false">50051</string>
+
+    <string name="preference_file_key" translatable="false">wallet.file</string>
+    <string name="pwd_key" translatable="false">pwd_key</string>
+    <string name="private_key" translatable="false">private_key</string>
+    <string name="pub_key" translatable="false">pub_key</string>
+    <string name="ip_key" translatable="false">ip</string>
+    <string name="port_key" translatable="false">port</string>
+    <string name="ip_sol_key" translatable="false">ip_sol</string>
+    <string name="port_sol_key" translatable="false">port_sol</string>
+    <string name="wallets_key">wallets_key</string>
+
+    <string name="is_watch_only_setup_key">is_watch_only_setup_key</string>
+
+    <string name="is_cold_wallet_key" translatable="false">is_cold_wallet_key</string>
+    <string name="wallet_name_key">wallet_name_key</string>
+    <string name="wallet_address_key">wallet_address_key</string>
+
+    <string name="selected_wallet_key">selected_wallet_key</string>
+
+    <string name="name_key" translatable="false">name_key</string>
+    <string name="balance_key" translatable="false">balance_key</string>
+    <string name="address_key" translatable="false">address_key</string>
+    <string name="frozen_key" translatable="false">frozen_key</string>
+    <string name="assets_key" translatable="false">assets_key</string>
+    <string name="votes_key" translatable="false">votes_key</string>
+    <string name="bandwidth_key" translatable="false">bandwidth_key</string>
+    <string name="create_time_key" translatable="false">create_time_key</string>
+    <string name="latest_operation_time_key" translatable="false">latest_operation_time_key</string>
+
+
+    <string name="net_limit_key" translatable="false">net_limit_key</string>
+    <string name="net_used_key" translatable="false">net_used_key</string>
+    <string name="net_free_limit_key" translatable="false">net_free_limit_key</string>
+    <string name="net_free_used_key" translatable="false">net_free_used_key</string>
+
+    <string name="energy_limit_key" translatable="false">energy_limit_key</string>
+    <string name="energy_used_key" translatable="false">energy_used_key</string>
+</resources>

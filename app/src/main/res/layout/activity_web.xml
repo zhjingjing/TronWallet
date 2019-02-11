@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <data>
+        <variable
+            name="presenter"
+            type="com.zj.tronwallet.activity.WebActivity"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <com.zj.tronwallet.view.TitleBar
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:titleText="应用"
+            app:titleColor="@color/colorPrimary"
+            app:titleSize="18sp"
+            app:leftBtnIcon="@drawable/titlebar_back_blue"
+            android:id="@+id/title_bar"
+            ></com.zj.tronwallet.view.TitleBar>
+
+        <com.zj.tronwallet.utils.WebVieWidget
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/web_widget"
+            ></com.zj.tronwallet.utils.WebVieWidget>
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <data>
+        <variable
+            name="presenter"
+            type="com.zj.tronwallet.activity.WalletSelectActivity"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <com.zj.tronwallet.view.TitleBar
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            app:titleSize="18sp"
+            app:titleColor="#fff"
+            app:titleText="选择钱包"
+            app:leftBtnIcon="@drawable/titlebar_back_white"
+            app:leftBtnClick="onLeftClicked"
+            android:id="@+id/title_bar"
+            ></com.zj.tronwallet.view.TitleBar>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:text="ETH钱包"
+            android:onClick="@{()->presenter.onCreateETH()}"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EAEAEA"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:text="Eos钱包"
+            android:onClick="@{()->presenter.onCreateEOS()}"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EAEAEA"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:text="Tron钱包"
+            android:onClick="@{()->presenter.onCreateTRON()}"
+            />
+    </LinearLayout>
+
+</layout>

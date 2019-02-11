@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <data>
+        <variable
+            name="presenter"
+            type="com.zj.tronwallet.activity.MnemonicCheckActivity"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <com.zj.tronwallet.view.TitleBar
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            app:leftBtnIcon="@drawable/titlebar_back_white"
+            app:leftBtnClick="onLeftClicked"
+            app:titleSize="16sp"
+            app:titleColor="#fff"
+            app:titleText="助记词校验"
+            android:id="@+id/title_bar"
+            ></com.zj.tronwallet.view.TitleBar>
+
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            app:max_select="-1"
+            android:background="#F0F0F0"
+            android:id="@+id/flow_layout_result"
+            ></com.zhy.view.flowlayout.TagFlowLayout>
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            app:max_select="-1"
+            android:id="@+id/flow_layout"
+            ></com.zhy.view.flowlayout.TagFlowLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:background="@color/colorPrimary"
+            android:textSize="16sp"
+            android:text="校验"
+            android:gravity="center"
+            android:onClick="@{()->presenter.onCheckMnemonic()}"
+            />
+    </LinearLayout>
+</layout>

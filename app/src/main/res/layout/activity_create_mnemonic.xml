@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <data>
+        <variable
+            name="presenter"
+            type="com.zj.tronwallet.activity.CreateMnemonicActivity"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <com.zj.tronwallet.view.TitleBar
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:titleText="助记词"
+            app:titleColor="#fff"
+            app:titleSize="18sp"
+            app:leftBtnClick="onLeftClicked"
+            android:background="@color/colorPrimary"
+            app:leftBtnIcon="@drawable/titlebar_back_white"
+            >
+        </com.zj.tronwallet.view.TitleBar>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:textSize="10sp"
+            android:text="请按顺序记下助记词，一旦丢失无法找回。"
+            />
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            app:max_select="0"
+            android:id="@+id/flow_layout"
+            ></com.zhy.view.flowlayout.TagFlowLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="15dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="助记词已备份"
+            android:id="@+id/tv_ok"
+            android:onClick="@{()->presenter.onNextClicked()}"
+            />
+    </LinearLayout>
+
+</layout>
